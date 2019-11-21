@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput component tests when rendered with no props should match snapshot 1`] = `
+<div
+  className="Form-input-container form-group w-100 undefined"
+>
+  <label
+    className="w-100"
+  >
+    <input
+      className="form-control Form-input"
+    />
+  </label>
+</div>
+`;
+
+exports[`FormInput component tests when rendered with props should match snapshot 1`] = `
+<div
+  className="Form-input-container form-group w-100 test-class"
+>
+  <label
+    className="w-100"
+  >
+    some label
+    <input
+      className="form-control Form-input"
+      max="98"
+      min="12"
+      name="some name"
+      onChange={[MockFunction]}
+      pattern=""
+      placeholder="some label"
+      type="text"
+      value="some value"
+    />
+  </label>
+</div>
+`;

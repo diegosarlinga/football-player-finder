@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content component tests when rendered should match snapshot 1`] = `
+<div>
+  <h2
+    className="Content-header text-center bg-primary text-white"
+  >
+    Content title
+  </h2>
+  <div
+    className="content container-fluid Content-body"
+  />
+</div>
+`;

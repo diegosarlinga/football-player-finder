@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { applyMiddleware, createStore } from 'redux';
+import { Provider } from 'react-redux';
+import thunkMiddleware from 'redux-thunk';
+import { createLogger } from 'redux-logger';
+import { rootReducer } from './store'
+import { Finder } from './finder';
+import './App.scss';
+
+const skipLog = ['test', 'production'].includes(process.env.NODE_ENV);
+const store = skipLog ?
+  createStore(rootReducer, applyMiddleware(thunkMiddleware)) :
+  createStore(rootReducer, applyMiddleware(thunkMiddleware, createLogger()));
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Finder></Finder>
+      </div>
+    </Provider>
   );
 }
 

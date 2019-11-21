@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormSelect component tests when rendered with no props should match snapshot 1`] = `
+<div
+  className="Form-select-container form-group w-100 undefined"
+>
+  <label
+    className="w-100"
+  >
+    <select
+      className="form-control"
+    >
+      <option
+        key="0"
+      />
+    </select>
+  </label>
+</div>
+`;
+
+exports[`FormSelect component tests when rendered with props should match snapshot 1`] = `
+<div
+  className="Form-select-container form-group w-100 test-class"
+>
+  <label
+    className="w-100"
+  >
+    some label
+    <select
+      className="form-control"
+      name="some name"
+      onChange={[MockFunction]}
+      placeholder="some label"
+      value="some value"
+    >
+      <option
+        key="0"
+      />
+      <option
+        key="0"
+        value="opt 1"
+      >
+        opt 1
+      </option>
+      <option
+        key="1"
+        value="opt 2"
+      >
+        opt 2
+      </option>
+    </select>
+  </label>
+</div>
+`;

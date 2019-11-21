@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage component tests when rendered with no props should match default snapshot 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-body d-flex flex-row justify-content-center align-items-center"
+  >
+    <ForwardRef(SvgErrorIcon)
+      className="Error-icon"
+    />
+    <div
+      className="d-flex flex-column align-items-start"
+    >
+      <h5
+        className="card-title"
+      >
+        Error
+      </h5>
+      <p
+        className="card-text"
+      >
+        Something went wrong
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ErrorMessage component tests when rendered with props should match custom text snapshot 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-body d-flex flex-row justify-content-center align-items-center"
+  >
+    <ForwardRef(SvgErrorIcon)
+      className="Error-icon"
+    />
+    <div
+      className="d-flex flex-column align-items-start"
+    >
+      <h5
+        className="card-title"
+      >
+        Error title
+      </h5>
+      <p
+        className="card-text"
+      >
+        Ups, something went really wrong
+      </p>
+    </div>
+  </div>
+</div>
+`;

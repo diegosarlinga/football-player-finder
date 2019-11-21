@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Finder component tests when rendered and is loading should match loading state snapshot 1`] = `
+<Content
+  className="--loading"
+  title="Football Player Finder"
+>
+  <LoadingIndicator />
+  <Filter
+    activeFilter={Object {}}
+    onFilter={[MockFunction]}
+    positions={Array []}
+  />
+  <List
+    footballPlayers={Array []}
+  />
+</Content>
+`;
+
+exports[`Finder component tests when rendered error state should match error state snapshot 1`] = `
+<Content
+  className=""
+  title="Football Player Finder"
+>
+  <ErrorMessage />
+</Content>
+`;
+
+exports[`Finder component tests when rendered with players and filter should match normal state snapshot 1`] = `
+<Content
+  className=""
+  title="Football Player Finder"
+>
+  <Filter
+    activeFilter={
+      Object {
+        "age": 29,
+        "name": "Pos",
+        "positions": "Pos 1",
+      }
+    }
+    onFilter={[MockFunction]}
+    positions={
+      Array [
+        "Pos 1",
+        "Pos 2",
+      ]
+    }
+  />
+  <List
+    footballPlayers={
+      Array [
+        Object {
+          "contractUntil": "2020-06-30",
+          "dateOfBirth": "1997-02-02",
+          "jerseyNumber": 43,
+          "name": "Cameron Borthwick-Jackson",
+          "nationality": "England",
+          "position": "Left-Back",
+        },
+        Object {
+          "contractUntil": "2020-06-30",
+          "dateOfBirth": "1997-02-02",
+          "jerseyNumber": 43,
+          "name": "Cameron Borthwick-Jackson",
+          "nationality": "England",
+          "position": "Left-Back",
+        },
+      ]
+    }
+  />
+</Content>
+`;

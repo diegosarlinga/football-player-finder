@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component tests when rendered with elements should match snapshot 1`] = `
+<List
+  footballPlayers={
+    Array [
+      Object {
+        "age": 29,
+        "contractUntil": "2020-06-30",
+        "dateOfBirth": "1997-02-02",
+        "jerseyNumber": 43,
+        "name": "Cameron Borthwick-Jackson",
+        "nationality": "England",
+        "position": "Left-Back",
+      },
+      Object {
+        "age": 29,
+        "contractUntil": "2020-06-30",
+        "dateOfBirth": "1997-02-02",
+        "jerseyNumber": 43,
+        "name": "Cameron Borthwick-Jackson",
+        "nationality": "England",
+        "position": "Left-Back",
+      },
+      Object {
+        "age": 29,
+        "contractUntil": "2020-06-30",
+        "dateOfBirth": "1997-02-02",
+        "jerseyNumber": 43,
+        "name": "Cameron Borthwick-Jackson",
+        "nationality": "England",
+        "position": "Left-Back",
+      },
+    ]
+  }
+>
+  <table
+    className="table table-striped"
+  >
+    <ListHeader>
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            Player
+          </th>
+          <th
+            scope="col"
+          >
+            Position
+          </th>
+          <th
+            className="d-none d-sm-table-cell"
+            scope="col"
+          >
+            Nationality
+          </th>
+          <th
+            scope="col"
+          >
+            Age
+          </th>
+        </tr>
+      </thead>
+    </ListHeader>
+    <ListBody
+      footballPlayers={
+        Array [
+          Object {
+            "age": 29,
+            "contractUntil": "2020-06-30",
+            "dateOfBirth": "1997-02-02",
+            "jerseyNumber": 43,
+            "name": "Cameron Borthwick-Jackson",
+            "nationality": "England",
+            "position": "Left-Back",
+          },
+          Object {
+            "age": 29,
+            "contractUntil": "2020-06-30",
+            "dateOfBirth": "1997-02-02",
+            "jerseyNumber": 43,
+            "name": "Cameron Borthwick-Jackson",
+            "nationality": "England",
+            "position": "Left-Back",
+          },
+          Object {
+            "age": 29,
+            "contractUntil": "2020-06-30",
+            "dateOfBirth": "1997-02-02",
+            "jerseyNumber": 43,
+            "name": "Cameron Borthwick-Jackson",
+            "nationality": "England",
+            "position": "Left-Back",
+          },
+        ]
+      }
+    >
+      <tbody>
+        <ListRow
+          age={29}
+          contractUntil="2020-06-30"
+          dateOfBirth="1997-02-02"
+          jerseyNumber={43}
+          key="0"
+          name="Cameron Borthwick-Jackson"
+          nationality="England"
+          position="Left-Back"
+        >
+          <tr>
+            <td
+              key="1"
+            >
+              Cameron Borthwick-Jackson
+              <br
+                className="d-sm-none"
+              />
+              <span
+                className="d-sm-none text-secondary"
+              >
+                (England)
+              </span>
+            </td>
+            <td
+              key="2"
+            >
+              Left-Back
+            </td>
+            <td
+              className="d-none d-sm-table-cell"
+              key="3"
+            >
+              England
+            </td>
+            <td
+              key="4"
+            >
+              29
+            </td>
+          </tr>
+        </ListRow>
+        <ListRow
+          age={29}
+          contractUntil="2020-06-30"
+          dateOfBirth="1997-02-02"
+          jerseyNumber={43}
+          key="1"
+          name="Cameron Borthwick-Jackson"
+          nationality="England"
+          position="Left-Back"
+        >
+          <tr>
+            <td
+              key="1"
+            >
+              Cameron Borthwick-Jackson
+              <br
+                className="d-sm-none"
+              />
+              <span
+                className="d-sm-none text-secondary"
+              >
+                (England)
+              </span>
+            </td>
+            <td
+              key="2"
+            >
+              Left-Back
+            </td>
+            <td
+              className="d-none d-sm-table-cell"
+              key="3"
+            >
+              England
+            </td>
+            <td
+              key="4"
+            >
+              29
+            </td>
+          </tr>
+        </ListRow>
+        <ListRow
+          age={29}
+          contractUntil="2020-06-30"
+          dateOfBirth="1997-02-02"
+          jerseyNumber={43}
+          key="2"
+          name="Cameron Borthwick-Jackson"
+          nationality="England"
+          position="Left-Back"
+        >
+          <tr>
+            <td
+              key="1"
+            >
+              Cameron Borthwick-Jackson
+              <br
+                className="d-sm-none"
+              />
+              <span
+                className="d-sm-none text-secondary"
+              >
+                (England)
+              </span>
+            </td>
+            <td
+              key="2"
+            >
+              Left-Back
+            </td>
+            <td
+              className="d-none d-sm-table-cell"
+              key="3"
+            >
+              England
+            </td>
+            <td
+              key="4"
+            >
+              29
+            </td>
+          </tr>
+        </ListRow>
+      </tbody>
+    </ListBody>
+  </table>
+</List>
+`;
+
+exports[`List component tests when rendered with no elements should match empty state snapshot 1`] = `
+<List
+  footballPlayers={Array []}
+>
+  <table
+    className="table table-striped"
+  >
+    <ListHeader>
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            Player
+          </th>
+          <th
+            scope="col"
+          >
+            Position
+          </th>
+          <th
+            className="d-none d-sm-table-cell"
+            scope="col"
+          >
+            Nationality
+          </th>
+          <th
+            scope="col"
+          >
+            Age
+          </th>
+        </tr>
+      </thead>
+    </ListHeader>
+    <ListEmpty>
+      <caption
+        className="text-center"
+      >
+        No data found for the given filters
+      </caption>
+    </ListEmpty>
+  </table>
+</List>
+`;
