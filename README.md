@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Motivation
+
+This is my solution to this [technical exercise](https://github.com/diegosarlinga/football-player-finder/blob/master/docs/Ejercicio%20Front%20ssr%20y%20sr.pdf). 
+
 ## Getting started
 
 Install dependencies by running the folow command
